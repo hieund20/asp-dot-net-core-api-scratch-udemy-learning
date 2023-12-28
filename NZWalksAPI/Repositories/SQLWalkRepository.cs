@@ -37,13 +37,15 @@ namespace NZWalks.API.Repositories
         public async Task<List<Walk>> GetAllAsync(string? filterOn = null, 
                                                 string? filterQuery = null, 
                                                 string? sortBy=null, 
-                                                bool isAscending=true)
+                                                bool isAscending=true,
+                                                int pageNumber = 1,
+                                                int pageSize = 1000)
         {
             var walks = dBContext.Walks.Include("Difficulty") //Navigation Properties
                                         .Include("Region") //Navigation Properties
                                         .AsQueryable();
             
-            //Filtering
+            // Filtering
             if(string.IsNullOrWhiteSpace(filterOn) == false && string.IsNullOrWhiteSpace(filterQuery) == false)
             {
                 if (filterOn.Equals("Name", StringComparison.OrdinalIgnoreCase))
@@ -52,7 +54,7 @@ namespace NZWalks.API.Repositories
                 }
             }
 
-            //Sorting
+            // Sorting
             if(string.IsNullOrWhiteSpace(sortBy) == false)
             {
                 if(sortBy.Equals("Name", StringComparison.OrdinalIgnoreCase))
@@ -65,8 +67,10 @@ namespace NZWalks.API.Repositories
                 }
             }
 
+            // Pagination
+            var skipResults = (pageNumber - 1) * pageSize;
 
-            return await walks.ToListAsync();
+            return await walks.Skip(skipResults).Take(pageSize).ToListAsync();
         }
 
         public async Task<Walk?> GetByIdAsync(Guid id)
