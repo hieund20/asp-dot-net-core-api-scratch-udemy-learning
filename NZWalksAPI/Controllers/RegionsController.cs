@@ -19,13 +19,15 @@ namespace NZWalks.API.Controllers
         private readonly NZWalkDBContext _dbContext;
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
+        private readonly ILogger<RegionsController> logger;
 
         //ctor để tạo nhanh contructor
-        public RegionsController(NZWalkDBContext dBContext, IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(NZWalkDBContext dBContext, IRegionRepository regionRepository, IMapper mapper, ILogger<RegionsController> logger)
         {
             this._dbContext = dBContext;
             this.regionRepository = regionRepository;
             this.mapper = mapper;
+            this.logger = logger;
         }
 
         //GET ALL REGIONS
