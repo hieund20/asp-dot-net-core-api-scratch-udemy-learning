@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Aec0SVc33iQFb/rTE3+tONuXAc+uWulDClo6TtQsoISS1SG1YFDWsy7+NNVuqBUAU5HPZ7m0ZlLC4tqWbwBblA==",
+  "dgSpecHash": "oKIEhj3MPjrq0lRtgM4jqYP1RXZuXx+YH1Q4YoAJCWt6ys/sNEy6OUDkY3wB9jJRt4GhhqWjmaelJTdqVkdCRw==",
   "success": true,
   "projectFilePath": "D:\\Udemy\\dotNetAPI\\NZWalks\\NZWalksAPI\\NZWalks.API.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,7 @@
     "C:\\Users\\hieund\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\hieund\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\hieund\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
-    "C:\\Users\\hieund\\.nuget\\packages\\serilog.aspnetcore\\8.0.0\\serilog.aspnetcore.8.0.0.nupkg.sha512",
+    "C:\\Users\\hieund\\.nuget\\packages\\serilog.aspnetcore\\8.0.1\\serilog.aspnetcore.8.0.1.nupkg.sha512",
     "C:\\Users\\hieund\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",
     "C:\\Users\\hieund\\.nuget\\packages\\serilog.extensions.logging\\8.0.0\\serilog.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\hieund\\.nuget\\packages\\serilog.formatting.compact\\2.0.0\\serilog.formatting.compact.2.0.0.nupkg.sha512",

@@ -886,7 +886,7 @@
           }
         }
       },
-      "Serilog.AspNetCore/8.0.0": {
+      "Serilog.AspNetCore/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
@@ -2984,10 +2984,10 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.AspNetCore/8.0.0": {
-      "sha512": "FAjtKPZ4IzqFQBqZKPv6evcXK/F0ls7RoXI/62Pnx2igkDZ6nZ/jn/C/FxVATqQbEQvtqP+KViWYIe4NZIHa2w==",
+    "Serilog.AspNetCore/8.0.1": {
+      "sha512": "B/X+wAfS7yWLVOTD83B+Ip9yl4MkhioaXj90JSoWi1Ayi8XHepEnsBdrkojg08eodCnmOKmShFUN2GgEc6c0CQ==",
       "type": "package",
-      "path": "serilog.aspnetcore/8.0.0",
+      "path": "serilog.aspnetcore/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3003,7 +3003,7 @@
         "lib/net8.0/Serilog.AspNetCore.xml",
         "lib/netstandard2.0/Serilog.AspNetCore.dll",
         "lib/netstandard2.0/Serilog.AspNetCore.xml",
-        "serilog.aspnetcore.8.0.0.nupkg.sha512",
+        "serilog.aspnetcore.8.0.1.nupkg.sha512",
         "serilog.aspnetcore.nuspec"
       ]
     },
@@ -4024,8 +4024,9 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.14",
       "Microsoft.IdentityModel.Tokens >= 7.0.3",
       "Serilog >= 3.1.1",
-      "Serilog.AspNetCore >= 8.0.0",
+      "Serilog.AspNetCore >= 8.0.1",
       "Serilog.Sinks.Console >= 5.0.1",
+      "Serilog.Sinks.File >= 5.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.IdentityModel.Tokens.Jwt >= 7.0.3"
     ]
@@ -4109,11 +4110,15 @@
           },
           "Serilog.AspNetCore": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.1, )"
           },
           "Serilog.Sinks.Console": {
             "target": "Package",
             "version": "[5.0.1, )"
+          },
+          "Serilog.Sinks.File": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
