@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASFF7AYDBmEGWDerk01nOOwAAAAACAAAAAAAQZgAAAAEAACAAAABte3o88bJPKG7RvoAYIRc1qjBvXWwJZJPt3mrZL0CcewAAAAAOgAAAAAIAACAAAAAan5iBaXNsL66fm2EFSbThCiWWkPoWvJ+1WGlBipMx3IAAAAD/H4sJNkumemCDzcgGUOjsIisKxUQlz1JXvibEDuX5u21LPv4MR34dNR1S3oIMABWjtEa1Q06M86cLbdxo/gXgMHMKrd7ylJfhDileRQ+EiiZMOe4JfFXr6UW2epTf+Z0YdozKyPq4g36pUvCa5JaULZn0PBj74KvhZmdMaMmer0AAAAAcCeafGxgzPsL3S1RpCw99P6Jc9ME0G4rLillEurbGJ/kRz6GSLotOAHtvdsf2Ty9qskJXTOZQS6tML+13qalx</EncryptedPassword>
+    <History>True|2024-01-28T08:26:58.1802180Z;True|2024-01-28T15:24:49.9811737+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="NZWalksAuthConnectionString">
+      <Value>Data Source=sqlserver-nzwalks-southeast-dev-001.database.windows.net,1433%3bInitial Catalog=sqldb-nzwalks-southeast-dev-001%3bUser ID=nzwalksadmin%3bPassword=!Duchieu200301</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="NZWalksConnectionString">
+      <Value>Data Source=sqlserver-nzwalks-southeast-dev-001.database.windows.net,1433%3bInitial Catalog=sqldb-nzwalks-southeast-dev-001%3bUser ID=nzwalksadmin%3bPassword=!Duchieu200301</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
